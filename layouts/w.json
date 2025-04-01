@@ -1,0 +1,27 @@
+{
+  "name": "chat",
+  "description": "opening chats",
+  "actions": [
+    {
+      "description": "open whatsapp",
+      "openApp": "whatsapp",
+      "method": "terminal",
+      "type": "openApp"
+    },
+    {
+      "description": "click first",
+      "x": 181,
+      "y": 1001,
+      "click": true,
+      "showCoordinates": true,
+      "type": "mouseClick"
+    },
+    {
+      "description": "send",
+      "whatsapp": true,
+      "contact": "Nanna",
+      "message": "hi",
+      "type": "whatsappMessage"
+    }
+  ]
+}

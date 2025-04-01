@@ -1,0 +1,26 @@
+{
+  "name": "browser",
+  "description": "testing",
+  "actions": [
+    {
+      "description": "oc",
+      "type": "openApp",
+      "app": "chrome",
+      "method": "terminal",
+      "chromeProfile": "kitsw.ac.in"
+    },
+    {
+      "description": "yt",
+      "type": "openUrl",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "description": "nt",
+      "type": "mouseClick",
+      "x": 330,
+      "y": 1051,
+      "click": true,
+      "showCoordinates": true
+    }
+  ]
+}

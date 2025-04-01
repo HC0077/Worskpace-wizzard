@@ -1,0 +1,13 @@
+{
+  "name": "click testing",
+  "description": "t",
+  "actions": [
+    {
+      "description": "click",
+      "x": 341,
+      "y": 1044,
+      "click": true,
+      "showCoordinates": true
+    }
+  ]
+}

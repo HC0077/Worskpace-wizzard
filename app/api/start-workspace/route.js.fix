@@ -1,0 +1,32 @@
+// This is a temporary file to store fixed code
+// We'll extract just the fixed section later
+async function executeWorkspace(layoutName) {
+  try {
+    // Find and validate layout - code above this point is unchanged
+    
+    // Execute each action in sequence
+    for (let i = 0; i < layout.actions.length; i++) {
+      const action = layout.actions[i];
+      console.log(`\nExecuting action ${i+1}/${layout.actions.length}: ${action.type || 'unknown'}`);
+      
+      try {
+        // Action execution code here (unchanged)
+        
+        // Wait between actions
+        if (i < layout.actions.length - 1) {
+          console.log('Waiting before next action...');
+          await new Promise(resolve => setTimeout(resolve, 1000));
+        }
+        
+      } catch (error) {
+        console.error(`Error executing action: ${error.message}`);
+      }
+    }
+    
+    console.log(`\nWorkspace "${layoutName}" execution completed successfully`);
+    return { success: true, message: `Workspace "${layoutName}" executed successfully` };
+  } catch (error) {
+    console.error(`Error executing workspace: ${error.message}`);
+    return { success: false, error: error.message };
+  }
+}

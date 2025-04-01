@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cursor Position Tracker</title>
+    <style>
+        body {
+            font-family: 'Menlo', monospace;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            user-select: none;
+        }
+        
+        #coordinates {
+            font-size: 24px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .instructions {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div id="coordinates">X: 0, Y: 0</div>
+    <div class="instructions">Move your cursor around to see coordinates update in real-time.</div>
+    
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const coordsElement = document.getElementById('coordinates');
+            coordsElement.textContent = `X: ${e.clientX}, Y: ${e.clientY}`;
+        });
+        
+        // For tracking screen coordinates (not just within the window)
+        document.addEventListener('mousemove', function(e) {
+            const coordsElement = document.getElementById('coordinates');
+            coordsElement.textContent = `X: ${e.screenX}, Y: ${e.screenY}`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "Meeting Mode",
+  "description": "Setup for video meetings",
+  "actions": [
+    {
+      "description": "Position mouse for browser",
+      "x": 100,
+      "y": 100,
+      "click": true,
+      "type": "mouseClick"
+    },
+    {
+      "description": "Open Google Meet",
+      "x": 300,
+      "y": 70,
+      "click": true,
+      "type": "mouseClick"
+    },
+    {
+      "description": "Type Google Meet URL",
+      "type": "inputText",
+      "text": "https://meet.google.com"
+    }
+  ]
+}

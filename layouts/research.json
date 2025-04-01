@@ -1,0 +1,28 @@
+{
+  "name": "Research Mode",
+  "description": "Browser setup for research",
+  "actions": [
+    {
+      "description": "Open Google Chrome",
+      "type": "openApp",
+      "app": "Google Chrome"
+    },
+    {
+      "description": "Position mouse at address bar",
+      "type": "mouseClick",
+      "x": 400,
+      "y": 70,
+      "click": true
+    },
+    {
+      "description": "Type GitHub URL",
+      "type": "inputText",
+      "text": "https://github.com"
+    },
+    {
+      "description": "Press Enter",
+      "type": "keyboardShortcut",
+      "keySequence": ["return"]
+    }
+  ]
+}

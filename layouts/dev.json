@@ -1,0 +1,30 @@
+{
+  "name": "Development Mode",
+  "description": "Setup for development with code editor and terminal",
+  "actions": [
+    {
+      "description": "Open WhatsApp",
+      "type": "openApp",
+      "app": "WhatsApp"
+    },
+    {
+      "description": "Position mouse in WhatsApp chat area",
+      "type": "mouseClick",
+      "x": 400,
+      "y": 300,
+      "click": true
+    },
+    {
+      "description": "Open Terminal",
+      "type": "openApp",
+      "app": "Terminal"
+    },
+    {
+      "description": "Position mouse in Terminal",
+      "type": "mouseClick",
+      "x": 400,
+      "y": 600,
+      "click": true
+    }
+  ]
+}

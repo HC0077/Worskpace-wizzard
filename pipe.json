@@ -1,0 +1,49 @@
+{
+  "name": "Workspace Orchestrator",
+  "description": "Automates workspace setup with customizable layouts and voice/text commands",
+  "version": "1.0.1",
+  "crons": [
+    {
+      "path": "/api/start-workspace",
+      "schedule": "0 0 8 * * 1-5",
+      "params": {
+        "layout": "dev"
+      },
+      "description": "Start development workspace at 8 AM on weekdays"
+    }
+  ],
+  "settings": [
+    {
+      "id": "defaultLayout",
+      "name": "Default Layout",
+      "description": "The default workspace layout to use when starting",
+      "type": "string",
+      "default": "dev"
+    },
+    {
+      "id": "screenWidth",
+      "name": "Screen Width",
+      "description": "Width of your screen in pixels",
+      "type": "number",
+      "default": 1920
+    },
+    {
+      "id": "screenHeight",
+      "name": "Screen Height",
+      "description": "Height of your screen in pixels",
+      "type": "number",
+      "default": 1080
+    }
+  ],
+  "permissions": [
+    "desktop.click",
+    "desktop.keypress",
+    "desktop.moveCursor",
+    "desktop.takeScreenshot",
+    "desktop.type",
+    "desktop.window.open",
+    "shell.subprocess",
+    "desktop.capture",
+    "audio.transcribe"
+  ]
+}

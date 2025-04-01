@@ -1,0 +1,129 @@
+{
+  "dev": {
+    "name": "Development Mode",
+    "description": "Mouse positioning for development setup",
+    "actions": [
+      {
+        "description": "Position mouse at top left (for VSCode)",
+        "x": 100,
+        "y": 100,
+        "click": true,
+        "type": null
+      },
+      {
+        "description": "Position mouse at bottom left (for Terminal)",
+        "x": 100,
+        "y": 500,
+        "click": true,
+        "type": null
+      }
+    ]
+  },
+  "research": {
+    "name": "Research Mode",
+    "description": "Browser setup for research",
+    "actions": [
+      {
+        "description": "Position mouse for browser",
+        "x": 100,
+        "y": 100,
+        "click": true,
+        "type": null
+      },
+      {
+        "description": "Type GitHub URL",
+        "x": 300,
+        "y": 70,
+        "click": true,
+        "type": "https://github.com"
+      },
+      {
+        "description": "Open Stack Overflow in new tab",
+        "x": 300,
+        "y": 70,
+        "click": true,
+        "type": "https://stackoverflow.com"
+      }
+    ]
+  },
+  "meeting": {
+    "name": "Meeting Mode",
+    "description": "Setup for video meetings",
+    "actions": [
+      {
+        "description": "Position mouse for browser",
+        "x": 100,
+        "y": 100,
+        "click": true,
+        "type": null
+      },
+      {
+        "description": "Open Google Meet",
+        "x": 300,
+        "y": 70,
+        "click": true,
+        "type": "https://meet.google.com"
+      }
+    ]
+  },
+  "w": {
+    "name": "chat",
+    "description": "opening chats",
+    "actions": [
+      {
+        "description": "open whatsapp",
+        "openApp": "whatsapp",
+        "method": "terminal"
+      },
+      {
+        "description": "click first",
+        "x": 181,
+        "y": 1001,
+        "click": true,
+        "showCoordinates": true
+      },
+      {
+        "description": "send",
+        "whatsapp": true,
+        "contact": "Nanna",
+        "message": "hi"
+      }
+    ]
+  },
+  "b": {
+    "name": "browser",
+    "description": "testing",
+    "actions": [
+      {
+        "description": "oc",
+        "openApp": "chrome",
+        "method": "terminal",
+        "chromeProfile": "kitsw.ac.in"
+      },
+      {
+        "description": "yt",
+        "url": "https://www.youtube.com/"
+      },
+      {
+        "description": "nt",
+        "x": 330,
+        "y": 1051,
+        "click": true,
+        "showCoordinates": true
+      }
+    ]
+  },
+  "c": {
+    "name": "click testing",
+    "description": "t",
+    "actions": [
+      {
+        "description": "click",
+        "x": 341,
+        "y": 1044,
+        "click": true,
+        "showCoordinates": true
+      }
+    ]
+  }
+}
